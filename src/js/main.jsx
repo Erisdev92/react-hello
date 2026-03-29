@@ -9,10 +9,33 @@ import "bootstrap"
 import '../styles/index.css'
 
 // components
-import Home from './components/Home';
+import Card from './components/Card';
+import Jumbotron from './components/Jumbotron';
+import NavBar from './components/NavBar';
+import Footer from './components/Footer';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Home/>
-  </React.StrictMode>,
+    <NavBar/>
+    <div className="container">
+    <Jumbotron/>
+    <div className="row">
+    <div className="row justify-content-center">
+  <div className="col-12 col-sm-6 col-md-4 col-lg-3">
+    <Card/>
+  </div>
+  <div className="col-12 col-sm-6 col-md-4 col-lg-3">
+    <Card/>
+  </div>
+  <div className="col-12 col-sm-6 col-md-4 col-lg-3">
+    <Card/>
+  </div>
+  <div className="col-12 col-sm-6 col-md-4 col-lg-3">
+    <Card/>
+  </div>
+</div>
+    </div>
+    </div>
+    <Footer/>
+  </React.StrictMode>
 )
